@@ -18,15 +18,28 @@ body {
     border-radius: 50%;
     margin-bottom: 10px;
 }
-.link {
-    display: block;
-    background: #007BFF;
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
+.floating-box {
+    position: fixed; /* Positioniert die Box fest auf dem Bildschirm */
+    top: 20px; /* Abstand vom oberen Rand */
+    left: 20px; /* Abstand vom linken Rand */
+    padding: 15px; /* Abstand innerhalb der Box */
+    background-color: rgba(0, 0, 0, 0.7); /* Dunkler halbtransparenter Hintergrund */
+    color: white; /* Textfarbe */
+    border-radius: 10px; /* Abgerundete Ecken */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Schatten für den schwebenden Effekt */
+    z-index: 1000; /* Stellt sicher, dass die Box vor anderen Inhalten bleibt */
 }
-.link:hover {
-    background: #0056b3;
+
+/* Link Styling */
+.floating-box a {
+    color: white; /* Linkfarbe */
+    text-decoration: none; /* Entfernt die Unterstreichung */
+    font-size: 16px; /* Schriftgröße */
+    display: block; /* Macht jeden Link zu einer Blockanzeige */
+    margin: 5px 0; /* Abstand zwischen den Links */
+}
+
+/* Hover-Effekt für Links */
+.floating-box a:hover {
+    color: #FFD700; /* Gelbe Farbe bei Hover */
 }
