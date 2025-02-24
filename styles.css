@@ -40,7 +40,7 @@ p {
     margin-bottom: 20px;
 }
 
-/* Floating Box for Links */
+/* Box Styling */
 .floating-box {
     position: fixed; /* Positioniert die Box fest auf dem Bildschirm */
     top: 20px; /* Abstand vom oberen Rand */
@@ -50,9 +50,10 @@ p {
     color: white; /* Textfarbe */
     border-radius: 10px; /* Abgerundete Ecken */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Schatten für den schwebenden Effekt */
-    z-index: 1000; /* Stellt sicher, dass die Box vor anderen Inhalten bleibt */;
+    z-index: 1000; /* Stellt sicher, dass die Box vor anderen Inhalten bleibt */
 }
 
+/* Link Styling */
 .floating-box a {
     color: white; /* Linkfarbe */
     text-decoration: none; /* Entfernt die Unterstreichung */
@@ -61,18 +62,8 @@ p {
     margin: 5px 0; /* Abstand zwischen den Links */
 }
 
-/* Links */
-.link a {
-    text-decoration: none;
-    color: white;
-    background-color: #0073e6;
-    padding: 12px 20px;
-    border-radius: 30px;
-    margin: 8px;
-    font-size: 18px;
-    transition: background-color 0.3s;
+/* Hover-Effekt für Links */
+.floating-box a:hover {
+    color: #FFD700; /* Gelbe Farbe bei Hover */
 }
 
-.link:hover a {
-    background-color: #005bb5;
-}
