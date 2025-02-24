@@ -1,45 +1,64 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
     text-align: center;
-    background-color: #f4f4f4;
-    padding: 20px;
 }
+
+/* Container */
 .container {
-    max-width: 400px;
-    margin: auto;
-    background: white;
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
     padding: 20px;
+    background-color: white;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+/* Avatar Image */
 .avatar {
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* Heading and Bio */
+h2 {
+    font-size: 24px;
+    color: #333;
     margin-bottom: 10px;
 }
-.floating-box a {
-    position: fixed; /* Positioniert die Box fest auf dem Bildschirm */
-    top: 20px; /* Abstand vom oberen Rand */
-    left: 20px; /* Abstand vom linken Rand */
-    padding: 15px; /* Abstand innerhalb der Box */
-    background-color: rgba(0, 0, 0, 0.7); /* Dunkler halbtransparenter Hintergrund */
-    color: white; /* Textfarbe */
-    border-radius: 10px; /* Abgerundete Ecken */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Schatten für den schwebenden Effekt */
-    z-index: 1000; /* Stellt sicher, dass die Box vor anderen Inhalten bleibt */
+
+p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
 }
 
-/* Link Styling */
-.floating-box a {
-    color: white; /* Linkfarbe */
-    text-decoration: none; /* Entfernt die Unterstreichung */
-    font-size: 16px; /* Schriftgröße */
-    display: block; /* Macht jeden Link zu einer Blockanzeige */
-    margin: 5px 0; /* Abstand zwischen den Links */
+/* Floating Box for Links */
+.floating-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Hover-Effekt für Links */
-.floating-box a:hover {
-    color: #00ffbf; /* Gelbe Farbe bei Hover */
+/* Links */
+.link {
+    text-decoration: none;
+    color: white;
+    background-color: #0073e6;
+    padding: 12px 20px;
+    border-radius: 30px;
+    margin: 8px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.link:hover {
+    background-color: #005bb5;
 }
