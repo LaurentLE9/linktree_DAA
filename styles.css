@@ -7,26 +7,6 @@ body {
     text-align: center;
 }
 
-/* Container */
-.container {
-    width: 100%;
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Avatar Image */
-.avatar {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
-}
-
 /* Heading and Bio */
 h2 {
     font-size: 24px;
@@ -40,30 +20,42 @@ p {
     margin-bottom: 20px;
 }
 
+/* Container Styling */
+.container {
+    width: 80%; /* Container breiter machen */
+    margin: 50px auto; /* Zentriert den Container */
+    text-align: center;
+}
+
+/* Avatar Styling */
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Rundes Profilbild */
+    margin-bottom: 20px; /* Abstand nach unten */
+}
+
 /* Box Styling */
 .floating-box {
-    position: fixed; /* Positioniert die Box fest auf dem Bildschirm */
-    top: 20px; /* Abstand vom oberen Rand */
-    left: 20px; /* Abstand vom linken Rand */
-    padding: 15px; /* Abstand innerhalb der Box */
+    display: inline-block; /* Box innerhalb des Containers, nicht fixiert */
     background-color: rgba(0, 0, 0, 0.7); /* Dunkler halbtransparenter Hintergrund */
     color: white; /* Textfarbe */
+    padding: 15px; /* Abstand innerhalb der Box */
     border-radius: 10px; /* Abgerundete Ecken */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Schatten für den schwebenden Effekt */
-    z-index: 1000; /* Stellt sicher, dass die Box vor anderen Inhalten bleibt */
+    margin-top: 20px; /* Abstand nach oben */
 }
 
 /* Link Styling */
-.floating-box a {
+.floating-box .link {
     color: white; /* Linkfarbe */
     text-decoration: none; /* Entfernt die Unterstreichung */
     font-size: 16px; /* Schriftgröße */
-    display: block; /* Macht jeden Link zu einer Blockanzeige */
+    display: block; /* Macht die Links zu Blockelementen */
     margin: 5px 0; /* Abstand zwischen den Links */
 }
 
 /* Hover-Effekt für Links */
-.floating-box a:hover {
+.floating-box .link:hover {
     color: #FFD700; /* Gelbe Farbe bei Hover */
 }
-
