@@ -33,7 +33,7 @@ body, html {
 .floating-box {
     background-color: rgba(0, 0, 0, 0.7); /* Dunkler halbtransparenter Hintergrund */
     color: white; /* Textfarbe */
-    padding: 15px; /* Abstand innerhalb der Box */
+    padding: 20px; /* Abstand innerhalb der Box */
     border-radius: 10px; /* Abgerundete Ecken */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Schatten für den schwebenden Effekt */
     margin-top: 20px; /* Abstand nach oben */
@@ -50,7 +50,7 @@ body, html {
 
 /* Hover-Effekt für Links */
 .floating-box .link:hover {
-    color: #FFD700; /* Gelbe Farbe bei Hover */
+    color: #00ffc8; /* Gelbe Farbe bei Hover */
 }
  /* Heading and Bio */
 h2 {
