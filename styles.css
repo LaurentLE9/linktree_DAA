@@ -1,30 +1,24 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
+/* Grundlegendes Styling für den gesamten Body */
+body, html {
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
-    text-align: center;
-}
-
-/* Heading and Bio */
-h2 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-p {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 20px;
+    height: 100%; /* Der Body soll die volle Höhe des Bildschirms einnehmen */
+    display: flex;
+    justify-content: center; /* Horizontal zentrieren */
+    align-items: center; /* Vertikal zentrieren */
+    font-family: Arial, sans-serif; /* Schriftart */
+    background-color: #f0f0f0; /* Hintergrundfarbe */
 }
 
 /* Container Styling */
 .container {
-    width: 80%; /* Container breiter machen */
-    margin: 50px auto; /* Zentriert den Container */
-    text-align: center;
+    text-align: center; /* Inhalt im Container zentrieren */
+    background-color: white; /* Weißer Hintergrund für den Container */
+    padding: 30px;
+    border-radius: 15px; /* Abgerundete Ecken für den Container */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Leichter Schatten für den Container */
+    width: 90%; /* Maximale Breite des Containers */
+    max-width: 600px; /* Maximale Breite des Containers */
 }
 
 /* Avatar Styling */
@@ -37,7 +31,6 @@ p {
 
 /* Box Styling */
 .floating-box {
-    display: inline-block; /* Box innerhalb des Containers, nicht fixiert */
     background-color: rgba(0, 0, 0, 0.7); /* Dunkler halbtransparenter Hintergrund */
     color: white; /* Textfarbe */
     padding: 15px; /* Abstand innerhalb der Box */
@@ -58,4 +51,16 @@ p {
 /* Hover-Effekt für Links */
 .floating-box .link:hover {
     color: #FFD700; /* Gelbe Farbe bei Hover */
+}
+ /* Heading and Bio */
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
 }
